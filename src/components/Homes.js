@@ -15,7 +15,6 @@ const Homes = () => {
   };
   const fetchHouse = async () => {
     setLoading(true);
-
     try {
       const { data } = await axios.get(url);
       setHouse(data);
